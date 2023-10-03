@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.30f295fe.css",
-    "main.js": "/static/js/main.46591f24.js",
-    "static/media/elephant1.jpeg": "/static/media/elephant1.88fa6bb5d49ae1de0747.jpeg",
-    "static/media/hollister.jpeg": "/static/media/hollister.de5cf94b5f8e03c8ccb8.jpeg",
-    "static/media/empty-cart.png": "/static/media/empty-cart.17a6189d91a853144359.png",
-    "static/media/polo.jpeg": "/static/media/polo.b447062e5711f96230fd.jpeg",
-    "static/media/lacoste.jpeg": "/static/media/lacoste.6fffdf96a7be58e8bc56.jpeg",
-    "static/media/nike.jpeg": "/static/media/nike.e0159c02da80caae49e2.jpeg",
-    "static/media/gucci.jpeg": "/static/media/gucci.aaabaecc1a896f6db587.jpeg",
-    "static/media/boss.jpeg": "/static/media/boss.d0d9c8c717cc15ad91e7.jpeg",
-    "static/media/adidas.jpeg": "/static/media/adidas.e60c5ce386ddd613fb19.jpeg",
-    "static/media/louis_vuitton.jpeg": "/static/media/louis_vuitton.34e26c3bd882b12bdf93.jpeg",
-    "static/media/tommy.jpeg": "/static/media/tommy.453b0f9851b34c7f530e.jpeg",
-    "static/media/puma.jpeg": "/static/media/puma.4a282f2496fa570346cc.jpeg",
-    "static/media/ga.jpeg": "/static/media/ga.c9ad26daf7ea137531e5.jpeg",
-    "static/media/ck.jpeg": "/static/media/ck.fff5fa5f6d4a6c4b0f15.jpeg",
-    "index.html": "/index.html",
-    "main.30f295fe.css.map": "/static/css/main.30f295fe.css.map",
-    "main.46591f24.js.map": "/static/js/main.46591f24.js.map"
+    "main.css": "/SneakersStore/static/css/main.30f295fe.css",
+    "main.js": "/SneakersStore/static/js/main.6dd7cacd.js",
+    "static/media/elephant1.jpeg": "/SneakersStore/static/media/elephant1.88fa6bb5d49ae1de0747.jpeg",
+    "static/media/hollister.jpeg": "/SneakersStore/static/media/hollister.de5cf94b5f8e03c8ccb8.jpeg",
+    "static/media/empty-cart.png": "/SneakersStore/static/media/empty-cart.17a6189d91a853144359.png",
+    "static/media/polo.jpeg": "/SneakersStore/static/media/polo.b447062e5711f96230fd.jpeg",
+    "static/media/lacoste.jpeg": "/SneakersStore/static/media/lacoste.6fffdf96a7be58e8bc56.jpeg",
+    "static/media/nike.jpeg": "/SneakersStore/static/media/nike.e0159c02da80caae49e2.jpeg",
+    "static/media/gucci.jpeg": "/SneakersStore/static/media/gucci.aaabaecc1a896f6db587.jpeg",
+    "static/media/boss.jpeg": "/SneakersStore/static/media/boss.d0d9c8c717cc15ad91e7.jpeg",
+    "static/media/adidas.jpeg": "/SneakersStore/static/media/adidas.e60c5ce386ddd613fb19.jpeg",
+    "static/media/louis_vuitton.jpeg": "/SneakersStore/static/media/louis_vuitton.34e26c3bd882b12bdf93.jpeg",
+    "static/media/tommy.jpeg": "/SneakersStore/static/media/tommy.453b0f9851b34c7f530e.jpeg",
+    "static/media/puma.jpeg": "/SneakersStore/static/media/puma.4a282f2496fa570346cc.jpeg",
+    "static/media/ga.jpeg": "/SneakersStore/static/media/ga.c9ad26daf7ea137531e5.jpeg",
+    "static/media/ck.jpeg": "/SneakersStore/static/media/ck.fff5fa5f6d4a6c4b0f15.jpeg",
+    "index.html": "/SneakersStore/index.html",
+    "main.30f295fe.css.map": "/SneakersStore/static/css/main.30f295fe.css.map",
+    "main.6dd7cacd.js.map": "/SneakersStore/static/js/main.6dd7cacd.js.map"
   },
   "entrypoints": [
     "static/css/main.30f295fe.css",
-    "static/js/main.46591f24.js"
+    "static/js/main.6dd7cacd.js"
   ]
 }
