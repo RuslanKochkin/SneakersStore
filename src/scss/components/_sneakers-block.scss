@@ -1,9 +1,11 @@
 @import '../variables';
 
 .sneakers-block {
-  width: 220px;
+  width: 190px;
   text-align: center;
   margin: 20px auto;
+  border: 1px solid #aedcd3;
+  border-radius: 2px;
    
 
   &-wrapper {
@@ -12,17 +14,15 @@
   }
 
   &__image {
-    width: 220px;
-    height: 170px;
-    border: 1px solid #aedcd3;
-    border-radius: 7px;
+    width: 188px;
+    height: 140px;
+    border-radius: 3px;
   }
 
   &__title {
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 1%;
-    margin-bottom: 20px;
   }
 
   &__selector {
@@ -61,7 +61,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2px;
     
   }
 
@@ -70,6 +69,7 @@
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.015em;
+    margin-left: 3px;
   }
 }
 

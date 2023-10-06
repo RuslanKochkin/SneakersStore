@@ -55,16 +55,16 @@ body {
     grid-column-gap: 11px;
     // одаптировали сетку под все виды устройств
     @media (max-width: 1600px ) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
     @media (max-width: 1200px ) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
     @media (max-width: 780px ) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-    @media (max-width: 520px ) {
-      grid-template-columns: repeat(1, 1fr);
+    @media (max-width: 640px ) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
