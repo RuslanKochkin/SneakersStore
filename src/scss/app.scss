@@ -1,0 +1,364 @@
+
+@import './variables';
+@import './libs/normalize';
+
+@import './components/all';
+
+body {
+  background-color: $background;
+}
+.wrapper {
+  // width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin:  auto;
+  border-radius: 0px;
+  // max-width: 1400px;
+
+  @media (max-width: 645px) {
+    width: calc(100vw - 10px);
+    margin-top: 15px;
+  }
+}
+ 
+.content {
+  margin-top: 0px ;
+  padding: 0px 2px;
+
+  &__error-info{
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+
+    h2{
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+    
+  &__title {
+    font-weight: 600;
+    font-size: 38px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 11px;
+    // одаптировали сетку под все виды устройств
+    @media (max-width: 1600px ) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1200px ) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 780px ) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 520px ) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1800px ) {
+
+      .categories {
+        margin-right: 30px;
+        width: 100%;
+        ul {
+          width: 800px;
+        }
+      }
+  }
+  @media (max-width: 1060px) {
+    .categories {
+      margin-top: 20px;
+      overflow:scroll;
+    }
+    
+    flex-direction: column-reverse;
+  }
+}
+  
+    &--cart {
+      display: flex;
+      justify-content: center;
+      
+      .content__title {
+        margin: 0;
+      }
+  }
+
+.cart {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content__title {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+
+    svg {
+      position: relative;
+      top: -2px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      path {
+        stroke: $black;
+        stroke-width: 1.9;
+      }
+    }
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @include noselect();
+
+    span {
+      display: inline-block;
+      margin-left: 7px;
+      color: #b6b6b6;
+      font-size: 18px;
+    }
+
+    span,
+    svg,
+    path {
+      transition: all $duration ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: darken($color: #b6b6b6, $amount: 50);
+        }
+      }
+      span {
+        color: darken($color: #b6b6b6, $amount: 50);
+      }
+    }
+  }
+  .content__items {
+    display: block;
+
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid $gray-line;
+    padding: 10px;
+
+    &-img {
+      img {
+        width: 90px;
+        height: 60px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 0px 10px;
+     
+
+      h3 {
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        color: #f73131;
+        text-align: center;
+      }
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 40%;
+
+      &-minus {
+        svg {
+          path:first-of-type {
+            display: none;
+          }
+        }
+      }
+
+      b {
+        font-size: 22px;
+      }
+    }
+
+    &-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      
+
+      b {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+      }
+    }
+
+    &-remove {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4%;
+
+      .button {
+        border-color: darken($color: $gray-line, $amount: 10);
+      }
+
+      svg {
+        transform: rotate(45deg);
+
+        path {
+          fill: darken($color: $gray-line, $amount: 15);
+        }
+      }
+
+      .button {
+        svg {
+          width: 11.5px;
+          height: 11.5px;
+          position: relative;
+        }
+        &:hover,
+        &:active {
+          border-color: darken($color: $gray-line, $amount: 80);
+          background-color: darken($color: $gray-line, $amount: 80);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin: 50px 0;
+
+    &-details {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: 22px;
+
+        &:last-of-type {
+          b {
+            color: $orange;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      .go-back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 210px;
+        border-color: darken($color: $gray-line, $amount: 10);
+
+        span {
+          color: darken($color: $gray-line, $amount: 20);
+          font-weight: 500;
+          font-weight: 600;
+        }
+
+        &:hover {
+          background-color: darken($color: $gray-line, $amount: 90);
+          border-color: darken($color: $gray-line, $amount: 90);
+
+          span {
+            color: $gray-line;
+          }
+        }
+
+        svg {
+          margin-right: 12px;
+          path {
+            fill: transparent;
+            stroke-width: 2;
+          }
+        }
+      }
+
+      .pay-btn {
+        font-size: 16px;
+        font-weight: 600;
+        width: 210px;
+        padding: 16px;
+      }
+    }
+  }
+
+  &--empty {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 145.4%;
+      letter-spacing: 0.01em;
+      color: #777777;
+    }
+
+    icon {
+      position: relative;
+      top: 2px;
+    }
+
+    img {
+      display: block;
+      width: 140px;
+      margin: 45px auto 60px;
+    }
+
+    .button--black {
+      padding: 12px 0 14px;
+      width: 200px;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
+}
