@@ -12,7 +12,6 @@ function SneakersBlock({ id, title, price, imageUrl, sizes, types }) {
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   const [activeColorIndex, setActiveColorIndex] = useState(0); // Добавляем состояние для активного цвета
-
   const addedCount = cartItem ? cartItem.count : 0;
 
   const onClickAdd = () => {
@@ -21,7 +20,7 @@ function SneakersBlock({ id, title, price, imageUrl, sizes, types }) {
       title,
       price,
       imageUrl: imageUrl[activeColorIndex], // Используем активный индекс цвета для выбора изображения
-      type: typeNames[activeType],
+      type: typeNames[types[activeColorIndex]],
       size: sizes[activeSize],
     };
     dispatch(addItem(item));
